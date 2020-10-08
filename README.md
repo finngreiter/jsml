@@ -22,4 +22,8 @@ el('h1', {
   innerText: "Finn's Awesome Website",
   style: 'font-family: sans-serif;',
 });
+
+el('p', {
+  innerText: 'Hello, and welcome to my site!',
+});
 ```
