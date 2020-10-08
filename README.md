@@ -25,5 +25,17 @@ el('h1', {
 
 el('p', {
   innerText: 'Hello, and welcome to my site!',
+  id: 'changeMe',
 });
 ```
+
+### Building
+
+`npm i -g minify`
+`./build`
+
+### Functions
+
+`el(type, options)` creates and element with specified options and adds it to the page (it also returns the object)
+`getId(id)` shorthand for getElementById
+`getClass(className)` shorthand for getElementByClassName
