@@ -32,6 +32,7 @@ el('p', {
 ### Building
 
 `npm i -g minify`
+
 `./build`
 
 ### Functions
