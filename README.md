@@ -33,7 +33,7 @@ el('p', {
 
 ### Example 2
 
-What I really built this for is APIs.
+When used with APIs
 
 ```javascript
 async function loaded() {
