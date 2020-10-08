@@ -2,6 +2,8 @@
 
 Easily add HTML elements to your page with JSML!
 
+## Examples
+
 ### Example 1
 
 `index.html`
@@ -29,13 +31,14 @@ el('p', {
 });
 ```
 
-### Building
+## Building
 
+install the minify package
 `npm i -g minify`
-
+run build script
 `./build`
 
-### Functions
+## Functions
 
 `el(type, options)` creates and element with specified options and adds it to the page (it also returns the object)
 `getId(id)` shorthand for getElementById
