@@ -33,9 +33,9 @@ el('p', {
 
 ## Building
 
-install the minify package
+install the minify package:
 `npm i -g minify`
-run build script
+and run build script
 `./build`
 
 ## Functions
