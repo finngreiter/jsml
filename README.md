@@ -31,6 +31,35 @@ el('p', {
 });
 ```
 
+### Example 2
+
+What I really built this for is APIs.
+
+```javascript
+async function loaded() {
+  // get stuff
+  const res = await fetch('http://apu-url.example/id/api-key');
+  const data = await res.json();
+
+  // add to page
+
+  el('h1', {
+    innerText: `User: ${data.user}`,
+    className: 'title big',
+  });
+
+  el('p', {
+    innerText: `Bio: ${data.bio}`,
+    className: 'bio-text medium-text',
+  });
+
+  el('a', {
+    innerText: `Website: ${data.websiteName}`,
+    href: data.websiteUrl,
+  });
+}
+```
+
 ## Building
 
 install the minify package:
