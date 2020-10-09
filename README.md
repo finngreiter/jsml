@@ -42,7 +42,6 @@ async function loaded() {
   const data = await res.json();
 
   // add to page
-
   el('h1', {
     innerText: `User: ${data.user}`,
     className: 'title big',
