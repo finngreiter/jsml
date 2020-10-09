@@ -1,8 +1,9 @@
-function el(type, options) {
+function el(type = 'p', txt = '', options = {}) {
   let el = document.createElement(type);
+  el.innerText = txt;
 
   for (const i in options) {
-    console.log((el[i] = options[i]));
+    el[i] = options[i];
   }
 
   appendEl(el, document.body);
