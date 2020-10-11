@@ -1,9 +1,15 @@
-function el(type = 'p', txt = '', options = {}) {
+function el(type = 'p', ...args) {
   let el = document.createElement(type);
-  el.innerText = txt;
 
-  for (const i in options) {
-    el[i] = options[i];
+  for (const t in args) {
+    if (typeof args[t] === 'object') {
+      for (const i in args[t]) {
+          el[i] = args[t][i];
+        }
+    }
+    if (typeof args[t] === 'string') {
+      el.innerText = args[t]
+    }
   }
 
   appendEl(el, document.body);
